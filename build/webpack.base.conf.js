@@ -8,9 +8,7 @@ function resolve (dir) {
 }
 
 module.exports = {
-  entry: {
-    app: './src/main.js'
-  },
+  entry: require('./code/entry.config.js'),
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -61,7 +59,12 @@ module.exports = {
           limit: 10000,
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
+      },
+      {
+        test: /\.ejs$/,
+        loader: 'ejs-render-loader'
       }
     ]
-  }
+  },
+  plugins: require('./code/plugins.config.js')
 }
