@@ -21,14 +21,15 @@
 </template>
 
 <script>
-export default {
-  name: 'hello',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
+  import b from '../../vendor/beta'
+  export default {
+    name: 'hello',
+    data () {
+      return {
+        msg: b
+      }
     }
   }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
