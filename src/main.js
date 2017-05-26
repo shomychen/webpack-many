@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import '!!file-loader?name=dll/js/[name].[ext]!./dll/dll.js' // 复制DLL文件至站点
+import '!!file-loader?name=dll/js/[name].[ext]!jquery' // 复制DLL文件至站点
 
 Vue.config.productionTip = false
 

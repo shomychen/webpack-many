@@ -20,7 +20,8 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src')
+      '@': resolve('src'),
+      'V': resolve('vendor') // 添加 vendor 别名
     }
   },
   module: {
@@ -66,5 +67,10 @@ module.exports = {
       }
     ]
   },
-  plugins: require('./code/plugins.config.js')
+  plugins: require('./code/plugins.config.js'),
+  // 添加 外部依赖变量名
+  externals: {
+    jquery: 'jQuery',
+    mathTools: 'Tools'
+  }
 }
