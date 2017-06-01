@@ -1,1 +1,1 @@
-alert(1)
+import '../../config/build-file.config'

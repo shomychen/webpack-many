@@ -1,0 +1,8 @@
+/*.el-form-grid{
+  & .el-button + .el-button{
+    margin-left:6px;
+  }
+}*/
+.el-form-grid .el-button + .el-button{
+  margin-left:6px;
+}

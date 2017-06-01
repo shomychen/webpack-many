@@ -1,0 +1,31 @@
+/*
+.template-multi{
+  & .template-multi-header{
+    background-color:var(--theme-background-color-primary);
+    height: 36px;
+    line-height: 36px;
+    padding-left:var(--theme-padding-middle);
+  }
+  & .template-multi-content{
+  }
+  & .el-badge__content{
+    background-color:var(--theme-color-primary);
+    box-sizing: content-box;
+  }
+}
+*/
+
+@component-namespace template {
+  @b multi{
+    & .el-badge__content{
+    background-color:var(--theme-color-primary);
+      box-sizing: content-box;
+    }
+  }
+  @b multi-header{
+    background-color:var(--theme-background-color-primary);
+    height: 36px;
+    line-height: 36px;
+    padding-left:var(--theme-padding-middle);
+  }
+}

@@ -1,0 +1,90 @@
+@font-face {
+  font-family: 'buifont';  /* project id 290233 */
+  src: url('//at.alicdn.com/t/font_cder0a85y5o8ncdi.eot');
+  src: url('//at.alicdn.com/t/font_cder0a85y5o8ncdi.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_cder0a85y5o8ncdi.woff') format('woff'),
+  url('//at.alicdn.com/t/font_cder0a85y5o8ncdi.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_cder0a85y5o8ncdi.svg#buifont') format('svg');
+}
+
+.bu-icon {
+  font-family:"buifont" !important;
+  font-size:14px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bui-edit:before { content: "\e605"; }
+
+.bui-delete:before { content: "\e60a"; }
+
+.bui-xtsz:before { content: "\e61f"; }
+
+.bui-tyyh:before { content: "\e646"; }
+
+.bui-shezhi:before { content: "\e604"; }
+
+.bui-znyx:before { content: "\e608"; }
+
+.bui-wujiaoxing:before { content: "\e603"; }
+
+.bui-sjlp:before { content: "\e630"; }
+
+.bui-add:before { content: "\e613"; }
+
+.bui-dianpushezhi:before { content: "\e650"; }
+
+.bui-weitongji:before { content: "\e631"; }
+
+.bui-tongji:before { content: "\e609"; }
+
+.bui-hygl:before { content: "\e629"; }
+
+.bui-fahuo:before { content: "\e60f"; }
+
+.bui-sygl:before { content: "\e606"; }
+
+.bui-xinzenghuiyuan:before { content: "\e61e"; }
+
+.bui-xiaoguofenxi:before { content: "\e70d"; }
+
+.bui-xiala:before { content: "\e682"; }
+
+.bui-ppzcd:before { content: "\e79e"; }
+
+.bui-youhuixinxi:before { content: "\e6fc"; }
+
+.bui-hydc:before { content: "\e723"; }
+
+.bui-guanhuai:before { content: "\e610"; }
+
+.bui-yingxiaohuodong:before { content: "\e61a"; }
+
+.bui-hudong:before { content: "\e62a"; }
+
+.bui-jine:before { content: "\e600"; }
+
+.bui-dingdan:before { content: "\e601"; }
+
+.bui-shangpin:before { content: "\e618"; }
+
+.bui-gjx:before { content: "\e627"; }
+
+.bui-liebiao:before { content: "\e602"; }
+
+.bui-rili:before { content: "\e60b"; }
+
+.bui-bingzhuangtu:before { content: "\e686"; }
+
+.bui-biaoge:before { content: "\e60c"; }
+
+.bui-zhuzhuangtu:before { content: "\e661"; }
+
+.bui-zengjia:before { content: "\e663"; }
+
+.bui-yanshu-icon1:before { content: "\e60e"; }
+
+.bui-dingwei:before { content: "\e611"; }
+
+.bui-price:before { content: "\e607"; }

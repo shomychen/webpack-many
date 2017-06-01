@@ -1,0 +1,5 @@
+.el-time-panel .el-time-panel__content .el-time-spinner .el-time-spinner__wrapper .el-scrollbar__wrap{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}

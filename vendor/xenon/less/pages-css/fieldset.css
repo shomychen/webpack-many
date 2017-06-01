@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@component-namespace tmp{
+  @b fieldset{
+    @e tags{
+      border:1px solid var(--theme-border-color-primary);
+      border-bottom:0;
+      padding: 0 var(--theme-padding-base);
+      & .el-tag{
+          height:20px;
+          line-height:18px;
+          cursor:pointer;
+          margin-right:var(--theme-margin-small);
+          &:hover{
+          color:var(--theme-color-primary);
+          border-color: var(--theme-color-primary);
+        }
+      }
+    }
+    @e prepend {
+      border-right: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    @e input{
+      & .el-textarea__inner{
+        border-top-left-radius:0;
+        border-top-rightt-radius:0;
+        padding:5px 10px;  /* // TODO组件包更新后需删除 */
+      }
+    }
+  }
+}

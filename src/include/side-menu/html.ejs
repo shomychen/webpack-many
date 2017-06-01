@@ -1,0 +1,43 @@
+<!-- Add "fixed" class to make the sidebar fixed always to the browser viewport. -->
+<!-- Adding class "toggle-others" will keep only one menu item open at a time. -->
+<!-- Adding class "collapsed" collapse sidebar root elements and show only icons. -->
+<div class="sidebar-menu toggle-others fixed">
+
+  <div class="sidebar-menu-inner">
+
+    <header class="logo-env">
+
+      <!-- logo -->
+      <div class="logo">
+        <a href="/index/index/page.html" class="logo-expanded">
+          <img src="${require(`../../images/logo@2x.png`)}" width="80" alt="" />
+        </a>
+
+        <a href="/index/index/page.html" class="logo-collapsed">
+          <img src="${require(`../../images/logo-collapsed@2x.png`)}" width="40" alt="" />
+        </a>
+      </div>
+
+      <!-- This will toggle the mobile menu and will be visible only on mobile devices -->
+      <div class="mobile-menu-toggle visible-xs">
+        <a href="#" data-toggle="user-info-menu">
+          <i class="fa-bell-o"></i>
+          <span class="badge badge-success">7</span>
+        </a>
+
+        <a href="#" data-toggle="mobile-menu">
+          <i class="fa-bars"></i>
+        </a>
+      </div>
+
+    </header>
+
+
+  </div>
+
+</div>
+<style>
+#main-menu  .sidebar-menu-disabled{
+    color: #000;
+  }
+</style>

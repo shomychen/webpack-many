@@ -1,0 +1,5 @@
+.el-checkbox .el-checkbox__input.is-checked .el-checkbox__inner::after{
+  height: 6px;
+  width: 4px;
+  left:3px;
+}

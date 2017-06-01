@@ -1,0 +1,13 @@
+.el-dialog__wrapper .el-dialog__header{
+  background-color:var(--theme-color-primary);
+}
+.el-dialog__wrapper  .el-dialog__title{
+  font-weight:normal
+}
+
+.el-dialog {
+  box-shadow: none;
+}
+.el-dialog.no-padding .el-dialog__body{
+  padding:0;
+}

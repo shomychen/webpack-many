@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@component-namespace template {
+  /* 页面内容区域布局*/
+  @b page{
+    position: relative;
+  }
+  @b page-location{
+    position: absolute;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    .el-breadcrumb {
+      line-height: 36px;
+    }
+  }
+  /* /页面内容区域布局*/
+
+  /*带组织树（或左菜单栏目）布局*/
+  @b layout {
+  &:before,
+  &:after{
+     display: table;
+     content: "";
+   }
+  &:after {
+     clear: both;
+   }
+  }
+
+  @b layout-left {
+    width: 260px;
+    float:left;
+    height: auto;
+  }
+  @b layout-right {
+    margin-left: 275px;
+    height: auto;
+  }
+  /* /带组织树（或左菜单栏目）布局*/
+}
+
+
+@component-namespace tmp{
+  /* 表单提示语 */
+  @b tips{
+    line-height: 20px;
+  }
+  @b mark{
+    font-size: var(--theme-font-size-small);
+    color: var(--theme-color-primary);
+    border:1px solid var(--theme-border-color-primary);
+    background: var(--color-white);
+    padding:0 2px;
+    line-height: 16px;
+  }
+}
+
+
+[v-cloak] {
+  display: none;
+}

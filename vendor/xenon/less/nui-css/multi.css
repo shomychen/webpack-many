@@ -1,0 +1,4 @@
+.el-multi .el-badge__content {
+  background-color:var(--theme-color-primary);
+  box-sizing: content-box;
+}

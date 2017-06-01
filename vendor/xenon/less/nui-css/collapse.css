@@ -1,0 +1,8 @@
+.el-collapse .el-collapse-item__header__arrow{
+  float:right;
+  margin-right:0;
+  font-size:12px;
+}
+.el-collapse .el-collapse-item__header__arrow:before{
+  line-height:43px;
+}

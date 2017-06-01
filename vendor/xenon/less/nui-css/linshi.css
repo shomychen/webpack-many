@@ -1,0 +1,8 @@
+/*//TODO nui版本更新后，此处需要删除
+临时样式，下一次皮肤包更新时需删除*/
+.el-input__icon{
+  width: 26px;
+}
+.el-input__icon+.el-input__inner{
+  padding-right:26px;
+}

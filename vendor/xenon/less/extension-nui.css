@@ -1,0 +1,20 @@
+/*Import Element Variables*/
+@import "../../assets/theme/default/var.css";
+
+/*// NUI组件*/
+@import "nui-css/badge.css";
+@import "nui-css/checkbox.css";
+@import "nui-css/collapse.css";
+@import "nui-css/dialog.css";
+@import "nui-css/dropdown.css";
+@import "nui-css/form.css";
+@import "nui-css/form-grid.css";
+@import "nui-css/table.css";
+@import "nui-css/tabs.css";
+@import "nui-css/timepicker.css";
+@import "nui-css/tree.css";
+@import "nui-css/upload.css";
+@import "nui-css/multi.css";
+
+/*// 临时文件*/
+@import "nui-css/linshi.css";

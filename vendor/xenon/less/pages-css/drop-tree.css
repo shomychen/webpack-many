@@ -1,0 +1,28 @@
+@component-namespace tmp{
+  @b droptree-popover{
+    &.el-popover{
+      padding:0;
+    }
+  }
+  @b droptree-tree{
+    &.el-tree{
+      border: 0;
+        .el-tree-node > .el-tree-node__content{
+          height:30px;
+          line-height:30px;
+        }
+      }
+  }
+  @b droptree-input{
+    input{
+      cursor:pointer;
+    }
+  }
+  @b droptree-scroll{
+
+    max-height: 300px;
+  }
+}
+.tem-droptree-scroll{
+  max-height: 300px;
+}

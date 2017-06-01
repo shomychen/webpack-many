@@ -1,0 +1,6 @@
+@import "../../assets/theme/default/var.css";
+
+/* ECRP 页面 */
+@import "extension-pages.css";
+/*ECRP Nui组件样式*/
+@import "extension-nui.css";

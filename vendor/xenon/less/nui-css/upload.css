@@ -1,0 +1,3 @@
+.el-upload-list .el-upload-list__item-name [class^="el-icon"]{
+  height: auto;
+}

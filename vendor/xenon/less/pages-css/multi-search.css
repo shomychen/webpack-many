@@ -1,0 +1,47 @@
+@charset "UTF-8";
+@component-namespace template {
+  @b table {
+    width: 100%;
+  }
+
+  @b table-bar {
+    /*  margin-top: var(--theme-margin-middle);*/
+  }
+  @b table-filter {
+    padding: var(--theme-padding-base) var(--theme-padding-middle) 0;
+    background-color: var(--theme-background-color-primary);
+    /* float: left;*/
+    width: 100%;
+    margin-bottom: var(--theme-margin-middle);
+    /*  margin-top: var(--theme-margin-middle);*/
+  }
+  @b table-plat {
+    position: relative;
+  }
+  @b table-control {
+    position: absolute;
+    top: 50%;
+    right: -200px;
+    margin-top: -15px;
+    z-index: 3;
+  }
+  @b table-result {
+    padding: var(--theme-padding-middle);
+    background-color: var(--theme-background-color-primary);
+    /*  float: left;*/
+    width: 100%;
+    /*  margin-top:var(--theme-margin-middle);*/
+    margin-bottom:var(--theme-margin-middle);
+    .rule .el-tag {
+      margin-right: var(--theme-margin-small);
+    }
+    .control {
+      text-align: center;
+      margin-top: var(--theme-margin-middle);
+    }
+  }
+  @b table-pagination {
+    float: right;
+    margin-top: var(--theme-margin-base);
+  }
+}
