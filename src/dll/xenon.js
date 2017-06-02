@@ -1,4 +1,4 @@
-var dll_8c29dc45c22793841319 =
+var xenon_8c29dc45c22793841319 =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
@@ -64,35 +64,19 @@ var dll_8c29dc45c22793841319 =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 68);
+/******/ 	return __webpack_require__(__webpack_require__.s = 70);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 25:
+/***/ 23:
 /***/ (function(module, exports) {
 
-module.exports = "b";
-
+// removed by extract-text-webpack-plugin
 
 /***/ }),
 
-/***/ 26:
-/***/ (function(module, exports) {
-
-module.exports = "beta";
-
-
-/***/ }),
-
-/***/ 27:
-/***/ (function(module, exports) {
-
-module.exports = "jsx";
-
-/***/ }),
-
-/***/ 68:
+/***/ 70:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__;

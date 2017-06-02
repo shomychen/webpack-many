@@ -7,7 +7,8 @@ module.exports = {
   },
   entry: {
     dll: ["./vendor/beta", "./vendor/b", "./vendor/c"],
-    xenon: ['./vendor/xenon/less/base.less']
+    xenon: ['./vendor/xenon/less/base.less'],
+    nui: ['vue', 'nui-js']
   },
   output: {
     path: path.join(__dirname, "../src/dll/"),
