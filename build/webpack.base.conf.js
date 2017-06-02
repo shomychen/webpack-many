@@ -63,7 +63,7 @@ module.exports = {
       },
       {
         test: /\.ejs$/,
-        loader: 'ejs-render-loader'
+        loader: 'ejs-compiled-loader'
       }
     ]
   },
