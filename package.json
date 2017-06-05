@@ -5,10 +5,10 @@
   "author": "aoxiang78 <ao_xiang@live.com>",
   "private": true,
   "scripts": {
-    "dev": "npm run et:build && node build/dev-server.js",
+    "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
-    "build:dll": "webpack --config ./build/webpack.dll.config.js -w",
+    "build:dll": "npm run et:build && webpack --config ./build/webpack.dll.config.js -w",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",

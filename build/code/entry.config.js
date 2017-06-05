@@ -4,7 +4,7 @@ var pageArr = require('./base/page-entries.config.js');
 var configEntry = {app: './src/main.js'};
 
 pageArr.forEach((page) => {
-  configEntry[page] = path.resolve(dirVars.pagesDir, page + '/app.js');
+  configEntry[page] = path.resolve(dirVars.pagesDir, page + '/main.js');
 });
 
 module.exports = configEntry;

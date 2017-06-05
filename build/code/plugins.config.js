@@ -16,7 +16,7 @@ var configPlugins = [
 pageArr.forEach((page) => {
   const htmlPlugin = new HtmlWebpackPlugin({
     filename: `${page}/index.html`,
-    template: path.resolve(dirVars.pagesDir, `./${page}`),
+    template: path.resolve(dirVars.pagesDir, `./${page}/page.js`),
     chunks: ['manifest', 'vendor', page],
     hash: true, // 为静态资源生成hash值
     xhtml: true
