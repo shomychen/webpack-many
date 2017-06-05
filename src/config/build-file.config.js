@@ -1,7 +1,7 @@
 // require('!!file-loader?name=index.html!../../index.html')
 module.exports = {
   js: {
-    jquery: require('!!file-loader?name=dll/js/[name].[ext]!jquery/dist/jquery.min.js')
+    jquery: require('!!file-loader?name=dll/js/[name].[ext]!jquery')
   },
   nui: {
    // js: require('!!file-loader?name=dll/xenon/js/[name].[ext]!../../vendor/xenon/js/bootstrap.min.js'),

@@ -10,11 +10,11 @@
       <!-- logo -->
       <div class="logo">
         <a href="/index/index/page.html" class="logo-expanded">
-          <img src="${require(`../../images/logo@2x.png`)}" width="80" alt="" />
+          <img src="<%= require('../../../vendor/xenon/images/logo@2x.png') %>" width="80" alt=""/>
         </a>
 
         <a href="/index/index/page.html" class="logo-collapsed">
-          <img src="${require(`../../images/logo-collapsed@2x.png`)}" width="40" alt="" />
+          <img src="<%= require('../../../vendor/xenon/images/logo-collapsed@2x.png') %>" width="40" alt=""/>
         </a>
       </div>
 
@@ -31,13 +31,48 @@
       </div>
 
     </header>
-
+    <% if (route.length) { %>
+    <ul id="main-menu" class="main-menu">
+      <% route.forEach(function(name, i){ %>
+      <li class="<%= (i == 0) ? 'opened active' : '' %>">
+        <a href="<%= name.path %>">
+          <i class="<%= name.icon %>"></i>
+          <span class="title"><%= name.title %></span>
+        </a>
+        <% if (name.list.length) { %>
+        <ul>
+          <% name.list.forEach(function(name){ %>
+          <li>
+            <% if (name.path) { %>
+            <a href="<%= name.path %>">
+              <span class="title"><%= name.title %></span>
+            </a>
+            <% } else { %>
+            <a disabled="true" class="sidebar-menu-disabled">
+              <span class="title"><%= name.title %></span>
+            </a>
+            <% } %>
+            <!--   <ul>
+                 <li class="">
+                   <a href="#">
+                     <span class="title">Menu Level 2.1</span>
+                   </a>
+                 </li>
+               </ul>-->
+          </li>
+          <% }) %>
+        </ul>
+        <% } %>
+      </li>
+      <% }) %>
+    </ul>
+    <% } %>
 
   </div>
 
 </div>
 <style>
-#main-menu  .sidebar-menu-disabled{
+  #main-menu .sidebar-menu-disabled {
     color: #000;
   }
 </style>
