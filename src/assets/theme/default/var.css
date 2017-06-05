@@ -1,0 +1,745 @@
+:root {
+
+  /* Transition
+  -------------------------- */
+  --all-transition: all .3s cubic-bezier(.645,.045,.355,1);
+  --fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  --fade-linear-transition: opacity 200ms linear;
+  --md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+  --border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1);
+  --color-transition-base: color .2s cubic-bezier(.645,.045,.355,1);
+  /*  ECRP UI规范变量
+  -------------------------- */
+
+  /*  theme
+  -------------------------- */
+  --theme-color-primary: #0f81c1;
+  --theme-color-secondary: #e9545a;
+  --theme-background-color-primary: #f1f1f1;
+  --theme-background-color-secondary: #aeb6c9;
+  --theme-border-color-primary: #ccc;
+  --theme-font-color-primary: #333;
+  --theme-font-color-secondary: #999;
+
+  /*  sidebar(左侧菜单栏)
+  -------------------------- */
+  --theme-sidebar-background-color: #344563;
+  --theme-sidebar-font-color: #a9c5ea;
+
+  /*  theme margin
+  -------------------------- */
+  --theme-margin-minus-small:-5px;
+  --theme-margin-small:5px;
+  --theme-margin-base:10px;
+  --theme-margin-middle:15px;
+  --theme-margin-large:20px;
+
+  /*  theme padding
+  -------------------------- */
+  --theme-padding-small:5px;
+  --theme-padding-base:10px;
+  --theme-padding-middle:15px;
+  --theme-padding-large:20px;
+
+  /*  theme font-size
+  -------------------------- */
+  --theme-font-size-small:12px;
+  --theme-font-size-base:14px;
+  --theme-font-size-middle:16px;
+
+
+  /* Colors
+  -------------------------- */
+  --color-primary: var(--theme-color-primary);/*#20a0ff;*/
+
+  --color-success: #13ce66;
+  --color-warning: #f7ba2a;
+  --color-danger: var(--theme-color-secondary);/*#ff4949;*/
+  --color-info: #50bfff;
+
+  /*--color-secondary: color(var(--color-primary) s(99%) l(*0.9));*/
+  --color-secondary: color(var(--color-primary) s(99%) l(*0.9));
+  --color-white: #fff;
+  --color-dark-white: color(var(--color-white) blend(var(--color-primary) 2%));
+  --color-black: #000;
+
+  /*--color-base-black: color(var(--color-primary) h(-202) s(0%) l(20%));*/
+  --color-base-black: color(var(--color-primary) h(+6) s(33%) l(18%));
+  --color-light-black: color(var(--color-base-black) h(+5) s(27%) l(27%));
+  --color-extra-light-black: color(var(--color-base-black) h(+2) s(19%) l(35%));
+
+  --color-base-silver: color(var(--color-base-black) h(+3) s(16%) l(58%));
+  --color-light-silver: color(var(--color-base-black) h(+3) s(23%) l(67%));
+  --color-extra-light-silver: color(var(--color-base-black) s(26%) l(80%));
+
+  --color-base-gray: color(var(--color-base-black) s(28%) l(86%));
+  --color-light-gray: color(var(--color-base-black) h(+10) s(33%) l(92%));
+  --color-extra-light-gray: color(var(--color-base-black) h(+6) s(33%) l(95%));
+
+  /* Link
+  -------------------------- */
+  --link-color: var(--color-base-black);
+  --link-hover-color: var(--color-primary);
+
+  /* Border
+  -------------------------- */
+  --border-width-base: 1px;
+  --border-style-base: solid;
+  --border-color-base: var(--theme-border-color-primary);
+  --border-color-hover: var(--color-base-silver);
+  --border-base: var(--border-width-base) var(--border-style-base) var(--border-color-base);
+  --border-radius-base: 5px;
+  --border-radius-small: 2px;
+  --border-radius-circle: 100%;
+
+  /* Box-shadow
+  -------------------------- */
+  --box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+  --box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12);
+
+  /* Fill
+  -------------------------- */
+  --fill-base: var(--color-white);
+
+  /* Font
+  -------------------------- */
+  --font-size-base: var(--theme-font-size-base);/*14px;*/
+  --font-color-base: var(--theme-font-color-primary);
+  --font-color-disabled-base: var(--theme-font-color-secondary);
+
+  /* Size
+  -------------------------- */
+  --size-base: 14px;
+
+  /* z-index
+  -------------------------- */
+  --index-normal: 1;
+  --index-top: 1000;
+  --index-popper: 2000;
+
+  /* Disable base
+  -------------------------- */
+  --disabled-fill-base: var(--color-extra-light-gray);
+  --disabled-color-base: #bbb;
+  --disabled-border-base: var(--color-base-gray);
+
+  /* Icon
+  -------------------------- */
+  --icon-color: #666;
+
+  /* Checkbox
+  -------------------------- */
+  --checkbox-font-size: 14px;
+  --checkbox-color: var(--color-base-black);
+  --checkbox-input-height: 14px;
+  --checkbox-input-width: 14px;
+  --checkbox-input-border-radius: var(--border-radius-small);/*change 边框圆角改为2px*/
+  --checkbox-input-fill: var(--color-white);
+  --checkbox-input-border: var(--border-base);
+  --checkbox-input-border-color: var(--border-color-base);
+  --checkbox-icon-color: var(--color-white);
+
+  --checkbox-disabled-input-border-color: var(--disabled-border-base);
+  --checkbox-disabled-input-fill: var(--disabled-fill-base);
+  --checkbox-disabled-icon-color: var(--disabled-fill-base);
+
+  --checkbox-disabled-checked-input-fill: var(--disabled-border-base);
+  --checkbox-disabled-checked-input-border-color: var(--disabled-border-base);
+  --checkbox-disabled-checked-icon-color: var(--color-white);
+
+  --checkbox-checked-input-border-color: var(--theme-border-color-primary);/*change 蓝框改为灰框*/
+  --checkbox-checked-input-fill: var(--color-white);/*change 蓝底改为白底*/
+  --checkbox-checked-icon-color: var(--theme-color-primary);/*change 白色勾改为蓝色*/
+
+  --checkbox-input-border-color-hover: var(--color-primary);
+
+  /* Radio
+  -------------------------- */
+  --radio-font-size: 14px;
+  --radio-color: var(--color-base-black);
+  --radio-input-height: 14px;/*change 高度改为14px*/
+  --radio-input-width: 14px;/*change 宽度改为14px*/
+  --radio-input-border-radius: var(--border-radius-circle);
+  --radio-input-fill: var(--color-white);
+  --radio-input-border: var(--border-base);
+  --radio-input-border-color: var(--border-color-base);
+  --radio-icon-color: var(--color-white);
+
+  --radio-disabled-input-border-color: var(--disabled-border-base);
+  --radio-disabled-input-fill: var(--disabled-fill-base);
+  --radio-disabled-icon-color: var(--disabled-fill-base);
+
+  --radio-disabled-checked-input-fill: var(--disabled-border-base);
+  --radio-disabled-checked-input-border-color: var(--disabled-border-base);
+  --radio-disabled-checked-icon-color: var(--color-white);
+
+  --radio-checked-input-border-color: var(--theme-border-color-primary);/*change 蓝框改为灰框*/
+  --radio-checked-input-fill: var(--color-white);
+  --radio-checked-icon-color: var(--color-white);/*change 蓝底改为白底*/
+
+  --radio-input-border-color-hover: var(--color-primary);
+
+  --radio-button-font-size: var(--font-size-base);
+  --radio-button-checked-fill: var(--color-primary);
+  --radio-button-checked-color: var(--color-white);
+  --radio-button-checked-border-color: var(--color-primary);
+
+  --radio-inner-after-circle:7px var(--color-primary);
+
+  /* Select
+  -------------------------- */
+  --select-border-color-hover: var(--border-color-hover);
+  --select-disabled-border: var(--disabled-border-base);
+  --select-font-size: var(--font-size-base);
+  --select-close-hover-color: var(--color-light-silver);
+
+  --select-input-color: var(--color-extra-light-silver);/*TODO 选择器下拉图标颜色*/
+  --select-multiple-input-color: #666;
+  --select-input-focus-background: var(--color-primary);
+  --select-input-font-size: 12px;
+
+  --select-tag-height: 24px;
+  --select-tag-color: var(--color-white);
+  --select-tag-background: var(--color-primary);
+
+  --select-option-color: var(--link-color);
+  --select-option-disabled-color: var(--color-extra-light-silver);
+  --select-option-disabled-background: var(--color-white);
+  --select-option-height: 30px;/*change 选择器高度由36px改为30px*/
+  --select-option-hover-background: var(--color-light-gray);
+  --select-option-selected: var(--color-primary);
+  --select-option-selected-hover: shade(var(--color-primary), 0.12);
+
+  --select-group-color: #999;
+  --select-group-height: 30px;
+  --select-group-font-size: 12px;
+
+  --select-dropdown-background: var(--color-white);
+  --select-dropdown-shadow: var(--box-shadow-base);
+  --select-dropdown-empty-color: #999;
+  --select-dropdown-max-height: 274px;
+  --select-dropdown-padding: 5px 0;
+  --select-dropdown-empty-padding: 10px 0;
+  --select-dropdown-border: solid 1px var(--disabled-border-base);
+
+  --select-dropdown-item-padding: 5px 10px;
+
+  /* Alert
+  -------------------------- */
+  --alert-padding: 8px 16px;
+  --alert-border-radius: var(--border-radius-base);
+  --alert-title-font-size: 13px;
+  --alert-description-font-size: 12px;
+  --alert-close-font-size: 12px;
+  --alert-close-customed-font-size: 13px;
+
+  --alert-success-color: var(--color-success);
+  --alert-info-color: var(--color-info);
+  --alert-warning-color: var(--color-warning);
+  --alert-danger-color: var(--color-danger);
+
+  --alert-icon-size: 16px;
+  --alert-icon-large-size: 28px;
+
+  /* Message Box
+  -------------------------- */
+  --msgbox-width: 420px;
+  --msgbox-border-radius: 3px;
+  --msgbox-font-size: 16px;
+  --msgbox-content-font-size: 14px;
+  --msgbox-content-color: var(--link-color);
+  --msgbox-error-font-size: 12px;
+
+  --msgbox-success-color: var(--color-success);
+  --msgbox-info-color: var(--color-info);
+  --msgbox-warning-color: var(--color-warning);
+  --msgbox-danger-color: var(--color-danger);
+
+  --msgbox-close-color: var(--color-extra-light-silver);
+  --msgbox-close-hover-color: var(--color-white);
+  --msgbox-close-position-top: 15px;
+  --msgbox-title-font-color:var(--color-white);
+  --msgbox-header-padding: 15px;
+  --msgbox-content-padding: 30px 15px;
+  --msgbox-footer-padding: 10px 15px 15px;
+
+  /* Message
+  -------------------------- */
+  --message-shadow: var(--box-shadow-base);
+  --message-min-width: 300px;
+  --message-padding: 10px 12px;
+  --message-content-color: var(--border-color-hover);
+  --message-close-color: var(--color-extra-light-silver);
+  --message-close-hover-color: var(--color-light-silver);
+
+  --message-success-color: var(--color-success);
+  --message-info-color: var(--color-info);
+  --message-warning-color: var(--color-warning);
+  --message-danger-color: var(--color-danger);
+
+
+
+  /* Notification
+  -------------------------- */
+  --notification-width: 330px;
+  --notification-padding: 15px;
+  --notification-shadow: var(--box-shadow-base);
+  --notification-icon-size: 40px;
+  --notification-font-size: var(--font-size-base);
+  --notification-color: var(--theme-font-color-secondary);
+  --notification-title-font-size: 16px;
+  --notification-title-color: var(--theme-font-color-primary);
+
+  --notification-close-color: var(--color-extra-light-silver);
+  --notification-close-hover-color: var(--color-light-silver);
+
+  --notification-success-color: var(--color-success);
+  --notification-info-color: var(--color-info);
+  --notification-warning-color: var(--color-warning);
+  --notification-danger-color: var(--color-danger);
+
+  /* Input
+  -------------------------- */
+  --input-font-size: var(--font-size-base);
+  --input-color: var(--font-color-base);
+  --input-width: 140px;
+  --input-height: 30px;/*change 高度由36改为30px*/
+  --input-border: var(--border-base);
+  --input-border-color: var(--border-color-base);
+  --input-border-radius: var(--border-radius-small);/*change 边框圆角由5px改为2px*/
+  --input-border-color-hover: var(--border-color-hover);
+  --input-fill: var(--color-white);
+  --input-fill-disabled: var(--disabled-fill-base);
+  --input-color-disabled: var(--font-color-disabled-base);
+  --input-icon-color: var(--color-extra-light-silver);/*TODO 图标颜色需要改变*/
+  --input-icon-width: 30px;
+  --input-placeholder-color: var(--theme-font-color-secondary);/*change placeholder颜色*/
+  --input-max-width: 314px;
+
+  --input-hover-border: var(--border-color-hover);
+
+  --input-focus-border: var(--color-primary);
+  --input-focus-fill: var(--color-white);
+
+  --input-disabled-fill: var(--disabled-fill-base);
+  --input-disabled-border: var(--disabled-border-base);
+  --input-disabled-color: var(--disabled-color-base);
+  --input-disabled-placeholder-color: var(--color-extra-light-silver);
+
+  --input-large-font-size: 16px;
+  --input-large-height: 36px;/*change 高度由42px改为36px*/
+
+  --input-small-font-size: 13px;
+  --input-small-height: 30px;
+
+  --input-mini-font-size: 12px;
+  --input-mini-height: 22px;
+
+  --input-inner-padding: 3px 10px;
+  --textarea-inner-padding: 5px 7px;
+
+  /* Cascader
+  -------------------------- */
+  --cascader-menu-fill: var(--fill-base);
+  --cascader-menu-font-size: var(--font-size-base);
+  --cascader-menu-radius: var(--border-radius-base);
+  --cascader-menu-border: var(--border-base);
+  --cascader-menu-border-color: var(--border-color-base);
+  --cascader-menu-border-width: var(--border-width-base);
+  --cascader-menu-color: var(--font-color-base);
+  --cascader-menu-option-color-active: var(--color-secondary);
+  --cascader-menu-option-fill-active: rgba(var(--color-secondary), 0.12);
+  --cascader-menu-option-color-hover: var(--font-color-base);
+  --cascader-menu-option-fill-hover: rgba(var(--color-black), 0.06);
+  --cascader-menu-option-color-disabled: #999;
+  --cascader-menu-option-fill-disabled: rgba(var(--color-black), 0.06);
+  --cascader-menu-option-empty-color: #666;
+  --cascader-menu-group-color: #999;
+  --cascader-menu-shadow: 0 1px 2px rgba(var(--color-black), 0.14), 0 0 3px rgba(var(--color-black), 0.14);
+  --cascader-menu-option-pinyin-color: #999;
+  --cascader-menu-submenu-shadow: 1px 1px 2px rgba(var(--color-black), 0.14), 1px 0 2px rgba(var(--color-black), 0.14);
+
+  --cascader-menu-item-padding:5px 30px 5px 10px;
+
+  /* Group
+  -------------------------- */
+  --group-option-flex: 0 0 (1/5) * 100%;
+  --group-option-offset-bottom: 12px;
+  --group-option-fill-hover: rgba(var(--color-black), 0.06);
+  --group-title-color: var(--color-black);
+  --group-title-font-size: var(--font-size-base);
+  --group-title-width: 66px;
+
+  /* Tab
+  -------------------------- */
+  --tab-font-size: var(--font-size-base);
+  --tab-border-line: 1px solid #e4e4e4;
+  --tab-header-color-active: var(--color-secondary);
+  --tab-header-color-hover: var(--font-color-base);
+  --tab-header-color: var(--font-color-base);
+  --tab-header-fill-active: rgba(var(--color-black), 0.06);
+  --tab-header-fill-hover: rgba(var(--color-black), 0.06);
+  --tab-vertical-header-width: 90px;
+  --tab-vertical-header-count-color: var(--color-white);
+  --tab-vertical-header-count-fill: var(--color-secondary);
+  --tab-radius-base: var(--border-radius-base);
+  --tab-padding-middle: var(--theme-padding-middle);
+  --tab-item-height: 36px;
+  --tab-item-padding: 30px;
+
+  --tab-header-border-bottom-color:var(--theme-border-color-primary);
+  --tab-border-card-border-color:var(--theme-border-color-primary);
+  --tab-border-card-header-background-color:var(--theme-background-color-primary);
+
+  /* Button
+  -------------------------- */
+  --button-font-size: 14px;
+  --button-border-radius: var(--border-radius-base);
+  --button-padding-vertical: 7px;/*change padding由10px改为7px改变按钮高度*/
+  --button-padding-horizontal: 15px;
+
+  --button-large-font-size: 16px;
+  --button-large-padding-vertical: 9px;/*change padding改为9px,使button高度为36px*/
+  --button-large-padding-horizontal: 19px;
+
+  --button-small-font-size: 12px;
+  --button-small-padding-vertical: 7px;
+  --button-small-padding-horizontal: 9px;
+
+  --button-mini-font-size: 12px;
+  --button-mini-padding-vertical: 4px;
+  --button-mini-padding-horizontal: 4px;
+
+  --button-default-color: var(--color-base-black);
+  --button-default-fill: var(--color-white);
+  --button-default-border: #c4c4c4;
+
+  --button-ghost-color: #666;
+  --button-ghost-fill: transparent;
+  --button-ghost-border: none;
+
+  --button-disabled-color: var(--color-extra-light-silver);
+  --button-disabled-fill: var(--color-extra-light-gray);
+  --button-disabled-border: var(--disabled-border-base);
+
+  --button-primary-border: var(--color-primary);
+  --button-primary-color: var(--color-white);
+  --button-primary-fill: var(--color-primary);
+
+  --button-success-border: var(--color-success);
+  --button-success-color: var(--color-white);
+  --button-success-fill: var(--color-success);
+
+  --button-warning-border: var(--color-warning);
+  --button-warning-color: var(--color-white);
+  --button-warning-fill: var(--color-warning);
+
+  --button-danger-border: var(--color-danger);
+  --button-danger-color: var(--color-white);
+  --button-danger-fill: var(--color-danger);
+
+  --button-info-border: var(--color-info);
+  --button-info-color: var(--color-white);
+  --button-info-fill: var(--color-info);
+
+  --button-hover-tint-percent: 20%;
+  --button-active-shade-percent: 10%;
+
+
+  /* cascader
+  -------------------------- */
+  --cascader-height: 200px;
+
+  /* Switch
+ -------------------------- */
+  --switch-on-color: var(--color-primary);
+  --switch-off-color: var(--color-extra-light-silver);
+  --switch-disabled-color: var(--color-light-gray);
+  --switch-disabled-text-color: var(--color-dark-white);
+
+  --switch-font-size: var(--font-size-base);
+  --switch-core-border-radius: 12px;
+  --switch-width: 46px;
+  --switch-height: 22px;
+  --switch-button-size: 16px;
+
+  --swithc-label-children-top: 4px;
+
+  /* Dialog
+ -------------------------- */
+  --dialog-background-color: var(--color-secondary);
+  --dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --dialog-tiny-width:  30%;
+  --dialog-small-width: 50%;
+  --dialog-large-width: 90%;
+  --dialog-close-color: var(--color-extra-light-silver);
+  --dialog-close-hover-color: var(--color-white);
+  --dialog-title-font-size: 16px;
+  --dialog-font-size: 14px;
+
+  --dialog-title-font-color:var(--color-white);
+  --dialog-header-padding: 15px;
+  --dialog-body-padding: 10px 15px;
+  --dialog-footer-padding: 10px 15px 15px;
+
+  /* Table
+ -------------------------- */
+  --table-border-color: var(--theme-border-color-primary);/*change 表格边框颜色*/
+  --table-text-color: var(--theme-font-color-primary);/*change 字体颜色*/
+  --table-thead-text-color:var(--color-white);
+  --table-header-background: var(--theme-background-color-secondary);/*change 表格头部颜色*/
+  --table-cell-padding: var(--theme-padding-small);
+
+  /* Pagination
+ -------------------------- */
+  --pagination-font-size: 13px;
+  --pagination-fill: var(--color-white);
+  --pagination-color: var(--link-color);
+  --pagination-border-radius: 2px;
+  --pagination-button-color: var(--color-light-silver);
+  --pagination-button-size: 28px;
+  --pagination-button-disabled-color: #e4e4e4;
+  --pagination-button-disabled-fill: var(--color-white);
+  --pagination-border-color: var(--disabled-border-base);
+  --pagination-hover-fill: var(--color-primary);
+  --pagination-hover-color: var(--color-white);
+
+  /* Popover
+ -------------------------- */
+  --popover-fill: var(--color-white);
+  --popover-font-size: 12px;
+  --popover-border-color: var(--theme-border-color-primary);
+  --popover-arrow-size: 6px;
+  --popover-padding: 10px;
+  --popover-title-font-size: 14px;
+  --popover-title-color: var(--theme-font-color-primary);
+
+  /* Tooltip
+  -------------------------- */
+  --tooltip-fill: var(--color-base-black);
+  --tooltip-color: var(--color-white);
+  --tooltip-font-size: 12px;
+  --tooltip-border-color: var(--color-base-black);
+  --tooltip-arrow-size: 6px;
+  --tooltip-padding:5px 10px;
+
+  --tooltip-light-border-color:var(--theme-border-color-primary);
+
+  /* Tag
+  -------------------------- */
+  --tag-padding: 0 5px;
+  --tag-fill: var(--border-color-hover);
+  --tag-color: var(--color-white);
+  --tag-close-color: #666;
+  --tag-font-size: 12px;
+  --tag-border-radius: 4px;
+
+  --tag-gray-fill: var(--theme-background-color-secondary);
+  --tag-gray-border: var(--theme-border-color-primary);
+  --tag-gray-color: var(--theme-font-color-primary);
+
+  --tag-primary-fill: rgba(var(--color-primary),0.10);
+  --tag-primary-border: rgba(var(--color-primary),0.20);
+  --tag-primary-color: var(--color-primary);
+
+  --tag-success-fill: rgba(18,206,102,0.10);
+  --tag-success-border: rgba(18,206,102,0.20);
+  --tag-success-color: var(--color-success);
+
+  --tag-warning-fill: rgba(247,186,41,0.10);
+  --tag-warning-border: rgba(247,186,41,0.20);
+  --tag-warning-color: var(--color-warning);
+
+  --tag-danger-fill: rgba(255,73,73,0.10);
+  --tag-danger-border: rgba(255,73,73,0.20);
+  --tag-danger-color: var(--color-danger);
+
+  /* Dropdown
+  -------------------------- */
+  --dropdown-font-color:var(--theme-font-color-primary);
+  --dropdown-font-size:var(--theme-font-size-base);
+  --dropdown-menu-item-font-size:var(--theme-font-size-base);
+  --dropdown-menu-box-shadow: var(--box-shadow-dark);
+  --dropdown-menuItem-hover-fill: var(--color-light-gray);
+  --dropdown-menuItem-hover-color: var(--link-color);
+  --dropdown-menu-height: 30px;
+
+  /* Badge
+  -------------------------- */
+  --badge-fill: var(--color-danger);
+  --badge-radius: 10px;
+  --badge-font-size: 12px;
+  --badge-padding: 6px;
+  --badge-size: 18px;
+
+  /* Card
+  --------------------------*/
+  --card-border-color: var(--disabled-border-base);
+  --card-border-radius: 4px;
+  --card-padding: 20px;
+
+  /* Slider
+  --------------------------*/
+  --slider-main-background-color: var(--color-primary);
+  --slider-runway-background-color: var(--color-light-gray);
+  --slider-button-hover-color: shade(var(--color-primary), 0.12);
+  --slider-stop-background-color: var(--color-extra-light-silver);
+  --slider-disable-color: var(--color-extra-light-silver);
+
+  --slider-margin: 16px 0;
+  --slider-border-radius: 3px;
+  --slider-height: 4px;
+  --slider-button-size: 12px;
+  --slider-button-wrapper-size: 36px;
+  --slider-button-wrapper-offset: -16px;
+
+  /* Steps
+  --------------------------*/
+  --steps-border-color: var(--disabled-border-base);
+  --steps-border-radius: 4px;
+  --steps-padding: 20px;
+
+  /* Menu
+  --------------------------*/
+  --menu-item-color: var(--link-color);
+  --menu-item-fill: var(--color-extra-light-gray);
+  --menu-item-hover-fill: var(--disabled-border-base);
+
+  --dark-menu-item-color: var(--link-color);
+  --dark-menu-item-fill: var(--color-light-black);
+  --dark-menu-item-hover-fill: var(--link-color);
+
+  /* Rate
+  --------------------------*/
+  --rate-height: 20px;
+  --rate-font-size: var(--font-size-base);
+  --rate-icon-size: 18px;
+  --rate-icon-margin: 6px;
+  --rate-icon-color: var(--color-extra-light-silver);
+
+  /* DatePicker
+  --------------------------*/
+  --datepicker-color: var(--link-color);
+  --datepicker-off-color: #ddd;
+  --datepicker-header-color: var(--border-color-hover);
+  --datepicker-icon-color: var(--color-light-silver);
+  --datepicker-border-color: var(--disabled-border-base);
+  --datepicker-inner-border-color: #e4e4e4;
+  --datepicker-cell-hover-color: var(--color-light-gray);
+  --datepicker-inrange-color: tint(var(--color-primary), 0.8);
+  --datepicker-inrange-hover-color: tint(var(--color-primary), 0.64);
+  --datepicker-active-color: var(--color-primary);
+  --datepicker-text-hover-color: var(--color-primary);
+
+  /* Loading
+  --------------------------*/
+  --loading-spinner-size: 42px;
+  --loading-fullscreen-spinner-size: 50px;
+
+  /* Scrollbar
+  --------------------------*/
+  --scrollbar-background-color: rgba(var(--color-light-silver), .3);
+  --scrollbar-hover-background-color: rgba(var(--color-light-silver), .5);
+
+  /* Carousel
+  --------------------------*/
+  --carousel-arrow-font-size: 12px;
+  --carousel-arrow-size: 36px;
+  --carousel-arrow-background: rgba(31, 45, 61, 0.11);
+  --carousel-arrow-hover-background: rgba(31, 45, 61, 0.23);
+  --carousel-indicator-width: 30px;
+  --carousel-indicator-height: 2px;
+  --carousel-indicator-padding-horizontal: 4px;
+  --carousel-indicator-padding-vertical: 12px;
+  --carousel-indicator-out-color: var(--border-color-hover);
+
+  /* Collapse
+  --------------------------*/
+  --collapse-border-color: var(--theme-border-color-primary);
+  --collapse-header-height: 43px;
+  --collapse-border-radius: 0;
+  --collapse-header-padding: 0 15px;
+  --collapse-header-fill: var(--theme-background-color-primary);
+  --collapse-header-color: var(--theme-font-color-primary);
+  --collapse-header-size: 14px;
+  --collapse-content-fill: var(--color-dark-white);
+  --collapse-content-size: 14px;
+  --collapse-content-color: var(--theme-font-color-primary);
+
+
+  /* Penal  1.0 对于penal模块颜色、字体、间距的设置
+  --------------------------*/
+  --panel-base-margin: 10px;
+  --panel-base-padding: 15px;
+  --panel-base-minus-margin: -10px;
+  --panel-base-minus-padding: -15px;
+  --panel-minus-margin: -5px;
+  --panel-bottom-padding: calc(var(--panel-base-padding) / 2);
+  --panel-icon-margin: 3px;
+  --panel-border-width: var(--border-width-base);
+  --panel-base-font-size: var(--font-size-base);
+  --panel-during-font-size: calc(var(--panel-base-font-size) + 2px);
+  --panel-icon-font-size: var(--panel-base-font-size);
+
+  --panel-main-text-color: var(--font-color-base);
+  --panel-gray-light-color: color(var(--border-color-base) h(-3) s(27%) l(90%));
+  --panel-white-color: var(--color-white);
+
+  --panel-success-color: var(--color-success);
+  --panel-info-color: var(--color-info);
+  --panel-warning-color: var(--color-warning);
+  --panel-danger-color: var(--color-danger);
+
+  --panel-inverted-color: var(--color-primary);
+  --panel-disabled-color: rgba(var(--panel-white-color), 0.7);
+  --panel-inverted-disabled-color: rgba(var(--panel-inverted-color),0.5);
+  --panel-success-disabled-color: rgba(var(--panel-success-color),0.5);
+  --panel-info-disabled-color: rgba(var(--panel-info-color),0.5);
+  --panel-warning-disabled-color: rgba(var(--panel-warning-color),0.5);
+  --panel-danger-disabled-color: rgba(var(--panel-danger-color),0.5);
+
+  /* Tres
+  --------------------------*/
+  --tree-hover-background:  var(--theme-background-color-primary);
+  --tree-current-background: var(--theme-color-primary);
+
+  --tree-node-content-height: 36px;
+  --tree-node-icon-border-color:var(--color-light-silver);
+  --tree-node-icon-hover-border-color:#999;
+
+  /* breadcrumb
+  --------------------------*/
+  --breadcrumb-font-size:var(--theme-font-size-base);
+  --breadcrumb-separator-margin: var(--theme-margin-small);
+  --breadcrumb-separator-color: var(--theme-font-color-primary);
+  --breadcrumb-inner-color: var(--theme-font-color-primary);
+  --breadcrumb-inner-hover-color: var(--theme-color-primary);
+
+  /* form
+  --------------------------*/
+  --form-font-color:var(--theme-font-color-primary);
+  --form-item-margin-botton: 10px;
+  --form-item-content-height: 30px;
+  --form-item-label-padding: 8px 12px 8px 0;
+  --form-item-label-font-color:var(--theme-font-color-primary);
+
+  --form-error-right-border-color:#ccc;
+  --form-error-content-after-border-color:color(var(--color-danger) a(0.5));
+
+  /* form-grid
+  --------------------------*/
+  --form-grid-margin-right: 6px;
+  --form-grid-col-padding: 3px;
+  --form-grid-row-padding-minus: -3px;
+  --form-grid-group-margin:var(--theme-margin-base);
+
+  /* multi
+  --------------------------*/
+  --multi-node-height: 36px;
+  --multi-node-font-color: var(--theme-font-color-primary);
+  --multi-children-border-color:var(--color-base-gray);
+  --multi-children-background-color:color(var(--color-primary) tint(92%));
+  --multi-content-before-border-bottom-color:var(--color-base-gray);
+  --multi-content-after-border-bottom-color: color(var(--color-primary) tint(92%));
+  --multi-select-all-badge-margin: -1px;
+}
