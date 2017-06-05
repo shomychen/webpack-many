@@ -3,6 +3,10 @@ module.exports = {
   js: {
     jquery: require('!!file-loader?name=dll/js/[name].[ext]!jquery/dist/jquery.min.js')
   },
+  nui: {
+   // js: require('!!file-loader?name=dll/xenon/js/[name].[ext]!../../vendor/xenon/js/bootstrap.min.js'),
+    css: require('!!file-loader?name=dll/css/[name].[ext]!../dll/css/nui.css')
+  },
   xenon: {
     bootstrap: require('!!file-loader?name=dll/xenon/js/[name].[ext]!../../vendor/xenon/js/bootstrap.min.js'),
     TweenMax: require('!!file-loader?name=dll/xenon/js/[name].[ext]!../../vendor/xenon/js/TweenMax.min.js'),
