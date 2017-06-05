@@ -6,9 +6,9 @@ module.exports = {
     extensions: [".js", ".jsx"]
   },
   entry: {
-    dll: ["./vendor/beta", "./vendor/b", "./vendor/c"],
+    utils: ["moment", "./vendor/b", "./vendor/c"],
     xenon: ['./vendor/xenon/less/base.less'],
-    nui: ['vue', 'nui-js','./src/assets/theme/default/src/index.css']
+    nui: ['vue', 'nui-js','./src/assets/theme/default/src/index.css', './vendor/xenon/less/extension.css']
   },
   output: {
     path: path.join(__dirname, "../src/dll/"),
@@ -36,7 +36,7 @@ module.exports = {
       {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
-          use: "css-loader"
+          use: "css-loader!postcss-loader"
         })
       },
       {

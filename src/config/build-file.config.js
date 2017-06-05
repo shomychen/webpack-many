@@ -4,7 +4,7 @@ module.exports = {
     jquery: require('!!file-loader?name=dll/js/[name].[ext]!jquery')
   },
   nui: {
-   // js: require('!!file-loader?name=dll/xenon/js/[name].[ext]!../../vendor/xenon/js/bootstrap.min.js'),
+    // js: require('!!file-loader?name=dll/xenon/js/[name].[ext]!../../vendor/xenon/js/bootstrap.min.js'),
     css: require('!!file-loader?name=dll/css/[name].[ext]!../dll/css/nui.css')
   },
   xenon: {
@@ -15,9 +15,8 @@ module.exports = {
     xenonApi: require('!!file-loader?name=dll/xenon/js/[name].[ext]!../../vendor/xenon/js/xenon-api.js'),
     xenonToggles: require('!!file-loader?name=dll/xenon/js/[name].[ext]!../../vendor/xenon/js/xenon-toggles.js'),
     xenonCustom: require('!!file-loader?name=dll/xenon/js/[name].[ext]!../../vendor/xenon/js/xenon-custom.js')
+  },
+  utils: {
+    utils: require('!!file-loader?name=dll/js/[name].[ext]!../dll/utils.js')
   }
-  // dll: {
-  //   js: require('!!file-loader?name=dll/dll.js!../../dll/dll.js'),
-  //   css: require('!file-loader?name=dll/dll.css!../../dll/dll.css'),
-  // },
 }

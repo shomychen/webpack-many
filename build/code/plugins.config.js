@@ -6,11 +6,11 @@ var pageArr = require('./base/page-entries.config.js')
 var configPlugins = [
   new webpack.DllReferencePlugin({
     context: path.join(__dirname, '../../'),
-    manifest: require('../../src/dll/dll-manifest.json') // eslint-disable-line
+    manifest: require('../../src/dll/utils-manifest.json') // eslint-disable-line
   }),
   new webpack.DllReferencePlugin({
     context: path.join(__dirname, '../../'),
-    manifest: require('../../src/dll/nui-manifest.json') // eslint-disable-line
+    manifest: require('../../src/dll/nui-manifest.json')
   })
 ]
 pageArr.forEach((page) => {

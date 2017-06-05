@@ -4,7 +4,7 @@ import './src/page.css'
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import NuiJs from 'nui-js'
-
+// import moment from 'moment'
 Vue.use(NuiJs)
 
 Vue.config.productionTip = false

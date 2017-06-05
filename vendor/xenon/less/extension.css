@@ -1,4 +1,4 @@
-@import "../../assets/theme/default/var.css";
+@import "../../../src/assets/theme/default/var.css";
 
 /* ECRP 页面 */
 @import "extension-pages.css";
