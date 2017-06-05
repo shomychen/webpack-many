@@ -1721,10 +1721,6 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
-cuint@latest:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/cuint/-/cuint-0.2.2.tgz#408086d409550c2631155619e9fa7bcadc3b991b"
-
 currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
@@ -4867,7 +4863,7 @@ object-assign@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-3.0.0.tgz#9bedd5ca0897949bca47e7ff408062d549f587f2"
 
-object-assign@^4.0.1, object-assign@^4.1.0:
+object-assign@^4.0.1, object-assign@^4.1.0, object-assign@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
 
@@ -5369,16 +5365,6 @@ postcss-font-weights@^2.0.1:
     css-font-weight-names "^0.2.1"
     postcss "^5.0.12"
 
-postcss-import@^10.0.0:
-  version "10.0.0"
-  resolved "https://registry.yarnpkg.com/postcss-import/-/postcss-import-10.0.0.tgz#4c85c97b099136cc5ea0240dc1dfdbfde4e2ebbe"
-  dependencies:
-    object-assign "^4.0.1"
-    postcss "^6.0.1"
-    postcss-value-parser "^3.2.3"
-    read-cache "^1.0.0"
-    resolve "^1.1.7"
-
 postcss-initial@^1.3.1:
   version "1.5.3"
   resolved "https://registry.yarnpkg.com/postcss-initial/-/postcss-initial-1.5.3.tgz#20c3e91c96822ddb1bed49508db96d56bac377d0"
@@ -5420,6 +5406,15 @@ postcss-load-plugins@^2.3.0:
   dependencies:
     cosmiconfig "^2.1.1"
     object-assign "^4.1.0"
+
+postcss-loader@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/postcss-loader/-/postcss-loader-1.3.3.tgz#a621ea1fa29062a83972a46f54486771301916eb"
+  dependencies:
+    loader-utils "^1.0.2"
+    object-assign "^4.1.1"
+    postcss "^5.2.15"
+    postcss-load-config "^1.2.0"
 
 postcss-media-minmax@^2.1.0:
   version "2.1.2"
@@ -5584,13 +5579,6 @@ postcss-partial-import@^2.1.0:
     postcss "^5.0.21"
     resolve "^1.1.7"
 
-postcss-partial-import@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-partial-import/-/postcss-partial-import-4.1.0.tgz#f6c3e78e7bbeda4d9dab96d360367b90b353f9a4"
-  dependencies:
-    glob "^7.1.1"
-    postcss-import "^10.0.0"
-
 postcss-property-lookup@^1.1.3:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/postcss-property-lookup/-/postcss-property-lookup-1.2.1.tgz#30450a1361b7aae758bbedd5201fbe057bb8270b"
@@ -5627,7 +5615,7 @@ postcss-reduce-transforms@^1.0.3:
     postcss "^5.0.8"
     postcss-value-parser "^3.0.1"
 
-postcss-salad@^1.0.6:
+postcss-salad@^1.0.6, postcss-salad@^1.0.8:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/postcss-salad/-/postcss-salad-1.0.8.tgz#ffa87b5fa394821d9608f68da5a14d13ea4c5059"
   dependencies:
@@ -5652,32 +5640,6 @@ postcss-salad@^1.0.6:
     postcss-utils "^1.0.1"
     precss "^1.4.0"
     saladcss-bem "^0.0.1"
-
-postcss-salad@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/postcss-salad/-/postcss-salad-2.0.1.tgz#1aead67b4078c702907857b4c01846b67d4fceaa"
-  dependencies:
-    autoprefixer "^6.0.2"
-    caniuse-api "^1.3.2"
-    chalk "^1.1.1"
-    pixrem "^3.0.0"
-    postcss "^6.0.1"
-    postcss-calc "^5.0.0"
-    postcss-color-function "^2.0.1"
-    postcss-css-reset "^1.0.2"
-    postcss-initial "^1.3.1"
-    postcss-inline-svg "^1.4.0"
-    postcss-neat "^2.5.2"
-    postcss-partial-import "^4.1.0"
-    postcss-pseudo-class-any-link "^1.0.0"
-    postcss-sass-color-functions "^1.1.0"
-    postcss-scss "^0.1.7"
-    postcss-shape "^0.0.1"
-    postcss-short "^1.4.0"
-    postcss-url "^6.1.0"
-    postcss-utils "^1.0.1"
-    precss "^1.4.0"
-    saladcss-bem "^0.0.2"
 
 postcss-sass-color-functions@^1.1.0:
   version "1.1.0"
@@ -5830,16 +5792,6 @@ postcss-url@^5.1.2:
     path-is-absolute "^1.0.0"
     postcss "^5.0.0"
 
-postcss-url@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/postcss-url/-/postcss-url-6.1.0.tgz#17b777b2b66470ec15c8759a77841e7f0cd6b0d5"
-  dependencies:
-    mime "^1.2.11"
-    minimatch "^3.0.0"
-    mkdirp "^0.5.0"
-    postcss "^5.0.0"
-    xxhashjs "^0.2.1"
-
 postcss-utils@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/postcss-utils/-/postcss-utils-1.0.2.tgz#36ca83b78279b5a7aa01d87f7e81f71f4b22ca2a"
@@ -5859,7 +5811,7 @@ postcss-zindex@^2.0.1:
     postcss "^5.0.4"
     uniqs "^2.0.0"
 
-postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.19, postcss@^5.0.2, postcss@^5.0.21, postcss@^5.0.3, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.1.0, postcss@^5.2.12, postcss@^5.2.16, postcss@^5.2.17:
+postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.13, postcss@^5.0.14, postcss@^5.0.16, postcss@^5.0.19, postcss@^5.0.2, postcss@^5.0.21, postcss@^5.0.3, postcss@^5.0.4, postcss@^5.0.5, postcss@^5.0.6, postcss@^5.0.8, postcss@^5.1.0, postcss@^5.2.12, postcss@^5.2.15, postcss@^5.2.16, postcss@^5.2.17:
   version "5.2.17"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-5.2.17.tgz#cf4f597b864d65c8a492b2eabe9d706c879c388b"
   dependencies:
@@ -6449,12 +6401,6 @@ saladcss-bem@^0.0.1:
   resolved "https://registry.yarnpkg.com/saladcss-bem/-/saladcss-bem-0.0.1.tgz#72070014ff3f6a49a6872cfcb3946c7758f40fc2"
   dependencies:
     postcss "^5.0.8"
-
-saladcss-bem@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/saladcss-bem/-/saladcss-bem-0.0.2.tgz#1a50774ca9412c4a5a075ad8604cc5bbce3f4dc2"
-  dependencies:
-    postcss "^6.0.1"
 
 samsam@1.x, samsam@^1.1.3:
   version "1.2.1"
@@ -7587,12 +7533,6 @@ xregexp@2.0.0:
 xtend@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-3.0.0.tgz#5cce7407baf642cba7becda568111c493f59665a"
-
-xxhashjs@^0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/xxhashjs/-/xxhashjs-0.2.1.tgz#9bbe9be896142976dfa34c061b2d068c43d30de0"
-  dependencies:
-    cuint latest
 
 y18n@^3.2.0, y18n@^3.2.1:
   version "3.2.1"

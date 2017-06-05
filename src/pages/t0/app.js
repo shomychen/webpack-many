@@ -1,5 +1,5 @@
 import '../../config/build-file.config' // 复制DLL文件至站点
-import '../../assets/theme/default/src/index.css'
+import './src/index.css'
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
