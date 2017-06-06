@@ -1,22 +1,4 @@
-@component-namespace template {
-  @b layout {
-  &:before,
-  &:after{
-     display: table;
-     content: "";
-   }
-  &:after {
-     clear: both;
-   }
-  }
-
-  @b layout-left {
-    width: 260px;
-    float:left;
-    height: auto;
-  }
-  @b layout-right {
-    margin-left: 275px;
-    height: auto;
-  }
+@import "../../../../assets/theme/default/var.css";
+.test01{
+  color:  var(--color-success)
 }
