@@ -35,7 +35,7 @@
     <ul id="main-menu" class="main-menu">
       <% route.forEach(function(name, i){ %>
       <li class="<%= (i == 0) ? 'opened active' : '' %>">
-        <a href="<%= name.path %>">
+        <a href="<%= name.url %>">
           <i class="<%= name.icon %>"></i>
           <span class="title"><%= name.title %></span>
         </a>
@@ -43,8 +43,8 @@
         <ul>
           <% name.list.forEach(function(name){ %>
           <li>
-            <% if (name.path) { %>
-            <a href="<%= name.path %>">
+            <% if (name.url) { %>
+            <a href="<%= name.url %>">
               <span class="title"><%= name.title %></span>
             </a>
             <% } else { %>
@@ -52,13 +52,6 @@
               <span class="title"><%= name.title %></span>
             </a>
             <% } %>
-            <!--   <ul>
-                 <li class="">
-                   <a href="#">
-                     <span class="title">Menu Level 2.1</span>
-                   </a>
-                 </li>
-               </ul>-->
           </li>
           <% }) %>
         </ul>
