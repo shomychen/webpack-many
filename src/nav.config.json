@@ -1,0 +1,31 @@
+[
+  {
+    "path": "",
+    "title": "测试",
+    "icon": "linecons-params",
+    "list": [
+      {
+        "path": "test/t0",
+        "url": "/test/t0/index.html",
+        "title": "测试0"
+      },
+      {
+        "path": "test/t1",
+        "url": "/test/t1/index.html",
+        "title": "测试1"
+      }
+    ]
+  },
+  {
+    "path": "",
+    "title": "服务",
+    "icon": "linecons-params",
+    "list": [
+      {
+        "path": "service/smsUrgeList",
+        "url": "/service/smsUrgeList/index.html",
+        "title": "场景接触服务"
+      }
+    ]
+  }
+]

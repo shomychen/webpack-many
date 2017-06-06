@@ -1,4 +1,4 @@
-import NavConfig from '../nav.config.js'
+import NavConfig from '../nav.config.json'
 
 const registerRoute = (config) => {
   return {route: NavConfig}
