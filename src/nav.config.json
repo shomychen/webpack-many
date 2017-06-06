@@ -2,7 +2,7 @@
   {
     "path": "",
     "title": "测试",
-    "icon": "linecons-params",
+    "icon": "",
     "list": [
       {
         "path": "test/t0",
@@ -19,7 +19,7 @@
   {
     "path": "",
     "title": "服务",
-    "icon": "linecons-params",
+    "icon": "bu-icon bui-tyyh",
     "list": [
       {
         "path": "service/smsUrgeList",

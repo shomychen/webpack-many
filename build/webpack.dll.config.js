@@ -22,15 +22,15 @@ module.exports = {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: path.posix.join('img','[name].[hash:7].[ext]')
+          name: path.posix.join('img','[name].[ext]')
         }
       },
       {
         test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
         loader: 'url-loader',
         options: {
-          limit: 10000,
-          name: path.posix.join('fonts','[name].[hash:7].[ext]')
+          limit: 100000,
+          name: path.posix.join('fonts','[name].[ext]')
         }
       },
       {
@@ -54,7 +54,7 @@ module.exports = {
     }),
     // extract css into its own file
     new ExtractTextPlugin({
-      filename: path.posix.join('css','[name].css')
+      filename: path.posix.join('[name].css')
     }),
   ]
 };
