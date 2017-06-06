@@ -1,0 +1,4 @@
+@import "../../../../assets/theme/default/var.css";
+.test01{
+ color:  var(--color-success)
+}
